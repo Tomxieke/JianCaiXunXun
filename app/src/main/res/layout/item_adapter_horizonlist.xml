@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:clickable="true"
+    android:padding="5dp"
+    android:background="@drawable/selector_item_background">
+
+    <ImageView
+        android:id="@+id/item_horizonList_iv"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ciist_moren"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/item_horizonList_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#333333"
+        android:maxEms="4"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="一起到"/>
+
+</LinearLayout>

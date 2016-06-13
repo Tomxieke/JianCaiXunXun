@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.tom.study.jiancaishangjie.PicDetailsActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/details_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/pic_top_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="40dp">
+
+        <ImageButton
+            android:id="@+id/navigation_back_imgbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/navigation_more_imgbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/abc_ic_menu_moreoverflow_mtrl_alpha" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/details_title_txt"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="世界互联网大会"
+                android:maxLines="2"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@android:color/primary_text_dark_nodisable"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/detailes_count_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="1/9"
+                android:layout_gravity="bottom|right"
+                android:textColor="@android:color/primary_text_dark_nodisable"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/details_content_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:text=""
+            android:lineSpacingExtra="5dp"
+            android:textColor="@android:color/primary_text_dark_nodisable" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

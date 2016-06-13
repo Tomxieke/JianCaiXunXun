@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题 -->
+    <widget.CiistTitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        myview:ciist_titleview_bg="#ea413c"
+        myview:ciist_title_text="建材迅讯"
+        myview:ciist_text_color="#f1f1f1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:textColor="#555555"
+        android:text="修改成功"/>
+
+    <Button
+        android:id="@+id/reset_OK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#f1f1f1"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:background="@drawable/selector_button_bg"
+        android:paddingBottom="20dp"
+        android:text="返回主页"/>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <!--分割线颜色-->
+    <color name="line_bg">#EDEDED</color>
+    <color name="popview_back_text_color">#CA1E2F</color>
+
+    <color name="tab_def_text_color">#333333</color>
+    <color name="tab_checked_text_color">#dc2236</color>
+    <color name="gery_light">#ededed</color>
+    <color name="title_color">#ea413c</color>
+
+    <color name="btn_blue_n">#37a0f9</color>
+    <color name="btn_blue_p">#3190e0</color>
+</resources>

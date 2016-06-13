@@ -1,0 +1,11 @@
+﻿<resources>
+    <string name="app_name">jcxunxun</string>
+    <string name="button_review">wangqihuigu</string>
+    <string name="tab_find">huodong</string>
+    <string name="tab_my">pingpai</string>
+    <string name="tab_news">shangjie</string>
+    <string name="tab_pictur">zhaoshang</string>
+    <string name="tab_redio">faxian</string>
+    <string name="tb_munion_tip_download_prefix">zhengzaixiazai</string>
+
+</resources>

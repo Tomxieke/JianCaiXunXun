@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="bdp_update_request_net_error">wangluocuowu,qingchongshi</string>
+    
+    <string name="bdp_update_title_download">faxianxinbanben</string>
+    <string name="bdp_update_title_install">faxianxinbanbenanzhuangbao</string>
+    <string name="bdp_update_title_as">tishi</string>
+    <string name="bdp_update_download_main_tip">fuhao1</string>
+    <string name="bdp_update_install_main_tip">fuhao2</string>
+    <string name="bdp_update_minor_tip">gengxinneirong:</string>
+    <string name="bdp_update_action_download">lijishengji</string>
+    <string name="bdp_update_action_install">lijianzhuang</string>
+    <string name="bdp_update_not_now">zanbushengji</string>
+    <string name="bdp_update_ignore">huluechibanben</string>
+    
+    <string name="bdp_update_new_download">faxianxinbanben,dianjigengxin</string>
+    <string name="bdp_update_download_complete">xinbanbenxiazaiwancheng,dianjianzhuang</string>
+    
+    <string name="bdp_update_as_notify_title">baidushoujizhushou</string>
+    <string name="bdp_update_as_notify_tip">baidushoujizhushou</string>
+    <string name="bdp_update_as_download_complete">baidushoujizhushouxiazaiwancheng</string>
+    <string name="bdp_update_as_install_tip">tuijianninshiyongbaidushoujizhushoushengji</string>
+    <string name="bdp_update_as_action_install">anzhuang</string>
+    <string name="bdp_update_as_action_cancel">quxixao</string>
+
+</resources>

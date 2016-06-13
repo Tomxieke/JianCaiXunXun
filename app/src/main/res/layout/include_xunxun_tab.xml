@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f5f5f5"/>
+
+    <RadioGroup
+        android:id="@+id/tab_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="2dp">
+
+        <RadioButton
+            android:id="@+id/xunxun_tab_newsBtn"
+            style="@style/tab_radiobtn_style"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_news_selector"
+            android:text="@string/tab_news" />
+
+        <RadioButton
+            android:id="@+id/xunxun_tab_merchantsBtn"
+            style="@style/tab_radiobtn_style"
+            android:drawableTop="@drawable/tab_merchants_selector"
+            android:text="@string/tab_pictur" />
+
+        <RadioButton
+            android:id="@+id/xunxun_tab_activeBtn"
+            style="@style/tab_radiobtn_style"
+            android:drawableTop="@drawable/tab_active_selector"
+            android:text="@string/tab_find" />
+
+        <RadioButton
+            android:id="@+id/xunxun_tab_brandBtn"
+            style="@style/tab_radiobtn_style"
+            android:drawableTop="@drawable/tab_brand_selector"
+            android:text="@string/tab_my" />
+
+    </RadioGroup>
+</LinearLayout>

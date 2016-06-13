@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/popview_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="25dp"
+        android:dividerHeight="15dp"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/popview_back_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/popview_more_back_icon_selector"
+        android:drawablePadding="10dp"
+        android:text="返回"
+        android:layout_marginBottom="30dp"
+        android:textColor="@drawable/popview_more_back_txt_selector"
+        android:textSize="16sp" />
+
+</LinearLayout>

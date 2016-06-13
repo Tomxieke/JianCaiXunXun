@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ciist-TitleView-->
+    <declare-styleable name="CiistTitleView">
+        <attr name="ciist_title_text" format="string"/>
+        <attr name="ciist_left_text" format="string"/>
+        <attr name="ciist_right_text" format="string"/>
+        <attr name="ciist_text_color" format="color|reference"/>
+        <attr name="ciist_left_icn" format="reference"/>
+        <attr name="ciist_right_icn" format="reference"/>
+        <attr name="ciist_titleview_bg" format="color|reference"/>
+    </declare-styleable>
+
+    <!--能描边的TextView-描边颜色和宽度-->
+    <declare-styleable name="StrokeTextView">
+        <attr name="ciist_stroke_color" format="color|reference"/>
+        <attr name="ciist_stroke_width" format="dimension"/>
+    </declare-styleable>
+
+
+    <!--带左图标的输入框-->
+    <declare-styleable name="CiistEditText">
+        <attr name="leftDrawable" format="reference"/>
+    </declare-styleable>
+
+
+    <!--ciist-smallTitle-->
+    <declare-styleable name="CiistSmallTitle">
+        <attr name="ciist_smalltitle_title" format="string"/>
+        <attr name="ciist_smalltitle_icon_color" format="color|reference"/>
+        <attr name="ciist_smalltitle_right_txt" format="string"/>
+        <attr name="ciist_smalltitle_txt_color" format="color|reference"/>
+        <attr name="ciist_smalltitle_right_bg_selector" format="reference"/>
+    </declare-styleable>
+
+    <!--ciist-Webview-->
+    <declare-styleable name="WebViewWithProgress">
+        <attr name="ciist_webviewwithprogress_progressStyle" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+        <attr name="barHeight" format="dimension" />
+    </declare-styleable>
+
+    <!--圆形的ImageView-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+
+</resources>

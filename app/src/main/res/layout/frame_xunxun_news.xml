@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_news"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+
+    <!--<widget.CiistTitleView-->
+        <!--android:id="@+id/news_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--myview:ciist_left_icn="@mipmap/ciist_erweima"-->
+        <!--myview:ciist_right_icn="@mipmap/ciist_xunxun_search"-->
+        <!--myview:ciist_titleview_bg="#ea413c"-->
+        <!--myview:ciist_title_text="建材迅讯"-->
+        <!--myview:ciist_text_color="#f1f1f1" />-->
+    <!--myview:ciist_right_text="分享"-->
+
+    <!-- 期数引导 -->
+    <!-- <RelativeLayout
+        android:id="@+id/count_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <View
+            android:id="@+id/line_color_view"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:background="#CA1E2F" />
+
+        <TextView
+            android:id="@+id/xunxun_news_lag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/line_color_view"
+            android:text="第1期"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/xunxun_news_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pastread_btn_bg_selector"
+            android:drawableLeft="@drawable/home_more_icon_selector"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/button_review"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </RelativeLayout>-->
+
+    <!-- 分割线 -->
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f5f5f5" />
+-->
+
+    <!-- 列表 -->
+    <!--<com.ciist.xunxun.app.widget.PullUpListView
+        android:id="@+id/xunxun_news_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:divider="@null"
+        android:layout_weight="1" />-->
+
+    <!-- 滑动title-->
+    <com.ciist.xunxun.app.widget.PagerSlidingTabStrip
+        android:id="@+id/xunxun_news_tab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/xunxun_news_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

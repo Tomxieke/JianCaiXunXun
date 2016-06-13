@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="tab_radiobtn_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@drawable/tab_text_selector</item>
+    </style>
+
+    <!--弹出对话框动画-->
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popview_in_amin</item>
+        <item name="android:windowExitAnimation">@anim/popview_out_amin</item>
+    </style>
+
+    <style name="cut_screen_popdialog_anim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/pop_game_over_dialog_in_amin</item>
+        <item name="android:windowExitAnimation">@anim/popview_out_amin</item>
+    </style>
+
+</resources>

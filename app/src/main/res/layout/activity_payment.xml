@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题 -->
+    <widget.CiistTitleView
+        android:id="@+id/payment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        myview:ciist_left_icn="@mipmap/ciist_back"
+        myview:ciist_titleview_bg="#ea413c"
+        myview:ciist_title_text="建材迅讯"
+        myview:ciist_text_color="#f1f1f1" />
+
+
+
+    <!-- 手机号码 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/payment_phoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:textColor="#444444"
+            android:background="@drawable/edt_bg_shape"
+            android:textColorHint="#999999"
+            android:hint="参与手机号" />
+    </RelativeLayout>
+
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#CCCCCC"/>
+
+    <!-- 支付内容详情 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/payment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#444444"
+            android:textSize="18sp"
+            android:text="单价"/>
+
+        <TextView
+            android:id="@+id/payment_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="￥1"/>
+    </RelativeLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#CCCCCC"/>
+
+    <!-- 支付内容详情 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/payment_fenshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#444444"
+            android:textSize="18sp"
+            android:text="份数(1~10)"/>
+
+        <TextView
+            android:id="@+id/payment_jia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_button_bg"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/payment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_toLeftOf="@id/payment_jia"
+            android:layout_marginRight="10dp"
+            android:text="1"/>
+
+        <TextView
+            android:id="@+id/payment_jian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_button_bg"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_toLeftOf="@id/payment_num"/>
+    </RelativeLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="#CCCCCC"/>
+
+    <!-- 支付方式 -->
+    <LinearLayout
+        android:id="@+id/payment_pay_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信立即支付"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="#444444"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@mipmap/ciist_xunxun_wxicon"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"/>
+
+
+
+
+</LinearLayout>

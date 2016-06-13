@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/big_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/bigtext_shortTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩略标题"
+            android:textSize="16sp"
+            android:textColor="#555555"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/bigimg100"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#eeeeee"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/bigimg200"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#eeeeee"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/bigimg300"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#eeeeee"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/bigLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活 动"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|top"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textColor="#FFFFFF"
+                android:background="#ff0000"/>
+        </FrameLayout>
+
+        <!-- 标题文字 -->
+        <TextView
+            android:id="@+id/bigtext_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="5dp"
+            android:text="销售玩完了销售玩完了销售玩完了销售玩完销售玩完了销售玩完了了销售玩完了销售玩完了销售玩完了销售玩完了"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/bigtext_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="5dp"
+            android:text="销售玩完了销售玩完了销售玩完了销售玩完销售玩完了销售玩完了了销售玩完了销售玩完了销售玩完了销售玩完了"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/big_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <!-- 时间 -->
+            <TextView
+                android:id="@+id/bigtext_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="03-07"
+                android:textColor="#909090"
+                android:textSize="15sp" />
+
+            <!-- 浏览次数 -->
+            <TextView
+                android:id="@+id/bigtext_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:drawableLeft="@mipmap/ciist_jc_home_icon_heat"
+                android:drawablePadding="6dp"
+                android:text="36"
+                android:textColor="#666"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="#CCCCCC" />-->
+
+
+</LinearLayout>

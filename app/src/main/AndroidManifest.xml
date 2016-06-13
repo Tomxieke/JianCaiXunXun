@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ciist.xunxun">
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!--腾讯大数据分析MTA开始-->
+    <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!--腾讯大数据分析MTA结束-->
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/xunxun_logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--腾讯大数据分析MTA开始-->
+        <meta-data android:name="TA_APPKEY" android:value="Aqc1105267809"/>
+        <!-- 请将value改为app发布对应的渠道，不同的发布渠道使用不同的名字 < -->
+        <meta-data android:name="InstallChannel" android:value="play"/>
+
+
+
+        <!-- baidu update begin -->
+        <meta-data
+            android:name="BDAPPID"
+            android:value="8021540" />
+        <meta-data
+            android:name="BDAPPKEY"
+            android:value="QCByk0L9IYMzdPqVENRGw5bxsQ4I6SG5" />
+
+
+        <activity
+            android:name="com.baidu.autoupdatesdk.ConfirmDialoigActivity"
+            android:exported="false"
+            android:screenOrientation="sensor"
+            android:theme="@style/bdp_update_dialog_style_fullscreen" />
+
+        <receiver
+            android:name="com.baidu.autoupdatesdk.receiver.BDBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_UPDATE" />
+                <action android:name="com.baidu.autoupdatesdk.ACTION_DOWNLOAD_COMPLETE" />
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_AS" />
+                <action android:name="com.baidu.autoupdatesdk.ACTION_AS_DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <!-- baidu update end -->
+
+
+<!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+        <!--<meta-data-->
+        <!--android:name="UMENG_APPKEY"-->
+        <!--android:value="57077f5ee0f55a605800093e" />-->
+        <!--<meta-data-->
+        <!--android:name="UMENG_CHANNEL"-->
+        <!--android:value="Channel ID" />-->
+
+        <activity
+            android:name="com.ciist.xunxun.app.activity.HelloActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主页面 -->
+        <activity
+            android:name="com.ciist.xunxun.app.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <!-- 二维码页面 -->
+        <activity
+            android:name="com.ciist.xunxun.app.activity.ErweimaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <!-- 搜索页面 -->
+        <activity
+            android:name="com.ciist.xunxun.app.activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <!-- 登陆页面 -->
+        <activity
+            android:name="com.ciist.xunxun.app.activity.LandActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+       <!-- 注册页面 -->
+        <activity
+            android:name="com.ciist.xunxun.app.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <!-- 找回密码页面 -->
+        <activity
+            android:name=".app.activity.FindPasActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <!-- 重置密码页面 -->
+        <activity
+            android:name=".app.activity.ResetPasActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <!-- 重置密码页面2 -->
+        <activity
+            android:name=".app.activity.ResetOKActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <!-- 注册页面 -->
+        <activity
+            android:name=".app.activity.RegisterOKActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+
+        <activity
+            android:name=".app.game.PuzzGameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+
+        <!-- 支付页面1 -->
+        <activity
+            android:name=".app.activity.PaymentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+
+        <!-- 支付页面2 -->
+        <activity
+            android:name=".app.activity.PaymentTwoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+
+        <!-- 内容模式 -->
+        <activity
+            android:name="com.ciist.xunxun.app.activity.WebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <!-- 列表模式 -->
+        <activity
+            android:name="com.ciist.xunxun.app.activity.ListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <!-- 图库模式 -->
+        <activity
+            android:name="com.ciist.xunxun.app.activity.PicDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1104646053" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信支付回调 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 自动更新服务 -->
+        <!--<service-->
+        <!--android:name="com.umeng.update.net.DownloadingService"-->
+        <!--android:process=":DownloadingService"></service>-->
+        <!--<activity-->
+        <!--android:name="com.umeng.update.UpdateDialogActivity"-->
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>-->
+    </application>
+
+
+</manifest>

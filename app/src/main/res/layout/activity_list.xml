@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题 -->
+    <widget.CiistTitleView
+        android:id="@+id/list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        myview:ciist_left_icn="@mipmap/ciist_back"
+        android:layout_marginTop="20dp"
+        myview:ciist_titleview_bg="#ea413c"
+        myview:ciist_title_text="建材迅讯"
+        myview:ciist_text_color="#f1f1f1"/>
+
+    <com.ciist.xunxun.app.widget.PullUpListView
+        android:id="@+id/list_lv"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

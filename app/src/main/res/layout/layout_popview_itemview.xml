@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/show_popview_Rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@mipmap/ciist_jc_home_icon_bg1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/show_popview_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="第一期"
+            android:textSize="60px"/>
+
+        <TextView
+            android:id="@+id/show_popview_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="2016.03.27"
+            android:layout_marginTop="12px"
+            android:layout_alignParentRight="true"
+            android:textSize="36px"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

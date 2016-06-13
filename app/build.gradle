@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.ciist.xunxun"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 14
+        versionName "1.1.14"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INFTICE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INFTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/umeng-update-v2.7.0.jar')
+    compile project(':onekeyshare')
+    compile project(':sharesdk')
+    compile project(':ciistsdk_library')
+    compile project(':imageSlider_viktor_library')
+    compile files('libs/BDAutoUpdateSDK_20150605_V1.2.0.jar')
+    compile files('libs/need_lib.jar')
+    compile files('libs/patchupdate.jar')
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile files('libs/mta-android-stat-sdk-2.1.0_20160111.jar')
+    compile files('libs/httpclient-4.2.5.jar')
+    compile files('libs/httpclient-cache-4.2.5.jar')
+    compile files('libs/httpcore-4.2.4.jar')
+    compile files('libs/httpmime-4.2.5.jar')
+    compile files('libs/libammsdk.jar')
+}

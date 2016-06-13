@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    xmlns:ciistview="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.ciist.xunxun.app.activity.ErweimaActivity">
+
+    <widget.CiistTitleView
+        android:id="@+id/er_fenxiang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        myview:ciist_left_icn="@mipmap/ciist_back"
+        myview:ciist_titleview_bg="#ea413c"
+        myview:ciist_title_text="建材迅讯"
+        myview:ciist_text_color="#f1f1f1"
+        myview:ciist_right_text="分享" />
+
+    <TextView
+        android:id="@+id/er_canyu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="马上参与"
+        android:textSize="18sp"
+        android:textColor="#f1f1f1"
+        android:background="@drawable/selector_btn_bg"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:gravity="center"
+        android:layout_below="@id/er_fenxiang"/>
+
+    <widget.WebViewWithProgress
+        android:id="@+id/er_webview"
+        android:layout_below="@id/er_canyu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        ciistview:ciist_webviewwithprogress_progressStyle="horizontal"
+        ciistview:barHeight="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/call_imgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:src="@drawable/ciist_call_selector"/>
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/payment_imgbtn"-->
+        <!--android:layout_above="@id/call_imgbtn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:clickable="true"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="invisible"-->
+        <!--android:src="@drawable/ciist_payment_selector"/>-->
+
+
+</RelativeLayout>

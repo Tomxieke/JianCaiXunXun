@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Android="http://schemas.android.com/tools"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    Android:clipToPadding="true"
+    android:background="#FFFFFF">
+
+    <!-- 标题 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ea413c">
+
+        <ImageView
+            android:id="@+id/xunxun_title_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ciist_erweima"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/xunxun_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f1f1f1"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="建材迅讯"/>
+        
+        <!--android.support.v4.widget.CircleImageView-->
+        <widget.CircleImageView
+            android:id="@+id/xunxun_title_right_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/ciist_xunxun_search"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <!--<widget.CiistTitleView-->
+            <!--android:id="@+id/main_title"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--myview:ciist_titleview_bg="#ea413c"-->
+            <!--myview:ciist_title_text="建材迅讯"-->
+            <!--myview:ciist_text_color="#f1f1f1" />-->
+
+        <ProgressBar
+            android:id="@+id/main_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <include layout="@layout/frame_xunxun_news"></include>
+
+        <include layout="@layout/frame_xunxun_merchants"></include>
+
+        <include layout="@layout/frame_xunxun_active"></include>
+
+        <include layout="@layout/frame_xunxun_brand"></include>
+
+    </FrameLayout>>
+
+
+    <include
+        layout="@layout/include_xunxun_tab"/>
+
+
+</LinearLayout>

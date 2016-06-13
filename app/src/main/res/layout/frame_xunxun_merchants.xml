@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_merchants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <!-- 标题 -->
+    <!--<widget.CiistTitleView-->
+        <!--android:id="@+id/merchants_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--myview:ciist_titleview_bg="#ea413c"-->
+        <!--myview:ciist_right_icn="@mipmap/ciist_xunxun_search"-->
+        <!--myview:ciist_title_text="招商"-->
+        <!--myview:ciist_text_color="#f1f1f1" />-->
+
+    <!-- 滑动title-->
+    <com.ciist.xunxun.app.widget.PagerSlidingTabStrip
+        android:id="@+id/xunxun_merchants_tab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/xunxun_merchants_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

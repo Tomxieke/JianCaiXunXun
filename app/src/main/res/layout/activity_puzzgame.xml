@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ciist_xunxun_game_bg">
+
+    <widget.CiistTitleView
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        myview:ciist_titleview_bg="#ea413c"
+        myview:ciist_title_text="建材迅讯"
+        android:layout_marginTop="20dp"
+        myview:ciist_text_color="#f1f1f1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ciist_xunxun_game_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00f"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/puzzgame_small_img"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/puzzgame_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/selector_bg_btn_game" />
+
+                <TextView
+                    android:id="@+id/puzzgame_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="ID:13800001234"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:background="@mipmap/ciist_xunxun_game_id"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/puzzgame_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="00"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ciist_xunxun_game_line"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/w_game_view_margin"
+            android:layout_marginLeft="@dimen/w_game_view_margin"
+            android:layout_marginRight="@dimen/w_game_view_margin"
+            android:layout_marginBottom="@dimen/w_game_view_marginBottom"
+            android:orientation="vertical"
+            android:background="#F1F1F1">
+
+            <ProgressBar
+                android:id="@+id/puzzgame_pro"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="7.5dp"
+                android:progress="0"
+                android:layout_marginLeft="@dimen/n_game_view_margin"
+                android:layout_marginRight="@dimen/n_game_view_margin"
+                android:layout_marginTop="5dp"
+                android:progressDrawable="@drawable/game_progress_bg"
+                android:visibility="visible" />
+
+            <com.ciist.xunxun.app.widget.PuzzGameView
+                android:id="@+id/puzzgame_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/n_game_view_margin"
+                android:layout_marginLeft="@dimen/n_game_view_margin"
+                android:layout_marginRight="@dimen/n_game_view_margin"
+                android:layout_marginBottom="@dimen/n_game_view_margin" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
